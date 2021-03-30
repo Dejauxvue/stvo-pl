@@ -1292,9 +1292,9 @@ void StereoFrameHandler::plotStereoFrameProjerr( Matrix4d DT, int iter )
     curr_frame->img_l.copyTo( img_l_aux_p );
 
     if( img_l_aux_p.channels() == 3 )
-        cvtColor(img_l_aux_p,img_l_aux_p,CV_BGR2GRAY);
+        cvtColor(img_l_aux_p,img_l_aux_p,COLOR_BGR2GRAY);
 
-    cvtColor(img_l_aux_p,img_l_aux_p,CV_GRAY2BGR);
+    cvtColor(img_l_aux_p,img_l_aux_p,COLOR_GRAY2BGR);
     img_l_aux_p.copyTo( img_l_aux_l );
 
     // Variables

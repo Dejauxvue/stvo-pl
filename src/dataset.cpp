@@ -147,8 +147,8 @@ Dataset::~Dataset() {
 bool Dataset::nextFrame(cv::Mat &img_l, cv::Mat &img_r) {
     if (!hasNext()) return false;
 
-    img_l = cv::imread(images_l.front(), CV_LOAD_IMAGE_UNCHANGED);
-    img_r = cv::imread(images_r.front(), CV_LOAD_IMAGE_UNCHANGED);
+    img_l = cv::imread(images_l.front(), IMREAD_UNCHANGED);
+    img_r = cv::imread(images_r.front(), IMREAD_UNCHANGED);
     cam.rectifyImagesLR(img_l, img_l, img_r, img_r);
     images_l.pop_front();
     images_r.pop_front();

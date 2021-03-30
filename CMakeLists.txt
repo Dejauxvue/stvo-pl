@@ -1,7 +1,7 @@
 project( stvo-pl )
 
 cmake_minimum_required(VERSION 2.7)
-find_package(OpenCV 3 REQUIRED)
+find_package(OpenCV REQUIRED)
 find_package(Boost REQUIRED COMPONENTS regex thread system filesystem)
 
 if(COMMAND cmake_policy)

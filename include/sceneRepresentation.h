@@ -21,6 +21,7 @@
 *****************************************************************************/
 
 #include <iomanip>
+#include <opencv2/core/types.hpp>
 using namespace std;
 
 #include <boost/shared_ptr.hpp>
@@ -43,7 +44,7 @@ using namespace mrpt::opengl;
 using namespace mrpt::maps;
 using mrpt::img::CImage;
 
-#include <opencv/cv.h>
+//#include <opencv/cv.h>
 using namespace cv;
 
 #include <eigen3/Eigen/Core>
@@ -103,7 +104,7 @@ private:
     COpenGLScene::Ptr             theScene;
     COpenGLViewport::Ptr          image, legend, help;
     opengl::CSetOfObjects::Ptr    bbObj, bbObj1, srefObj, srefObj1, gtObj, srefObjGT, elliObjL, elliObjP;
-    opengl::CEllipsoid::Ptr       elliObj;
+    opengl::CEllipsoid3D::Ptr       elliObj;
     opengl::CSetOfLines::Ptr      lineObj;
     opengl::CPointCloud::Ptr      pointObj;
 

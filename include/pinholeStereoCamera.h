@@ -24,7 +24,7 @@
 
 using namespace std;
 
-#include <opencv/cv.h>
+//#include <opencv/cv.h>
 #include <opencv2/calib3d.hpp>
 #include <opencv2/features2d/features2d.hpp>
 #include <line_descriptor_custom.hpp>

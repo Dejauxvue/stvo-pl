@@ -29,7 +29,7 @@
 #include <utility>
 using namespace std;
 
-#include <opencv/cv.h>
+//#include <opencv/cv.h>
 #include <opencv2/features2d/features2d.hpp>
 
 #include <opencv2/ximgproc.hpp>
